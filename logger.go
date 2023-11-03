@@ -1,6 +1,7 @@
 package goll
 
 import (
+	"fmt"
 	"github.com/sirupsen/logrus"
 	"log"
 )
@@ -13,42 +14,42 @@ type Logger struct {
 }
 
 func (l *Logger) Tracef(format string, args ...interface{}) {
-	l.logger.Tracef(format, args...)
+	l.logger.Tracef(fmt.Sprintf(format), args...)
 }
 func (l *Logger) Traceln(args ...interface{}) {
 	l.logger.Traceln(args...)
 }
 
 func (l *Logger) Debugf(format string, args ...interface{}) {
-	l.logger.Debugf(format, args...)
+	l.logger.Debugf(fmt.Sprintf(format), args...)
 }
 func (l *Logger) Debugln(args ...interface{}) {
 	l.logger.Debugln(args...)
 }
 
 func (l *Logger) Infof(format string, args ...interface{}) {
-	l.logger.Infof(format, args...)
+	l.logger.Infof(fmt.Sprintf(format), args...)
 }
 func (l *Logger) Infoln(args ...interface{}) {
 	l.logger.Infoln(args...)
 }
 
 func (l *Logger) Warnf(format string, args ...interface{}) {
-	l.logger.Warnf(format, args...)
+	l.logger.Warnf(fmt.Sprintf(format), args...)
 }
 func (l *Logger) Warnln(args ...interface{}) {
 	l.logger.Warnln(args...)
 }
 
 func (l *Logger) Errorf(format string, args ...interface{}) {
-	l.logger.Errorf(format, args...)
+	l.logger.Errorf(fmt.Sprintf(format), args...)
 }
 func (l *Logger) Errorln(args ...interface{}) {
 	l.logger.Errorln(args...)
 }
 
 func (l *Logger) Fatalf(format string, args ...interface{}) {
-	l.logger.Fatalf(format, args...)
+	l.logger.Fatalf(fmt.Sprintf(format), args...)
 }
 func (l *Logger) Fatalln(args ...interface{}) {
 	l.logger.Fatalln(args...)
