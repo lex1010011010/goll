@@ -1,4 +1,4 @@
-package logger
+package goll
 
 import (
 	"encoding/json"

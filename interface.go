@@ -1,4 +1,4 @@
-package logger
+package goll
 
 // LoggerInterface определяет методы, которые должен иметь логгер
 type LoggerInterface interface {
